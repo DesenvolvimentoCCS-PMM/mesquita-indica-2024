@@ -84,17 +84,17 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
                 <img
                   src={option.image}
                   alt={option.name}
-                  className="w-full object-contain rounded-2xl sm:rounded-[45px] "
+                  className="w-full  object-contain rounded-2xl sm:rounded-[45px] "
                 />
                 {selectedOption === option.name && (
                   <div className="absolute inset-0 bg-green-500/75 flex justify-center items-center rounded-3xl sm:rounded-[45px]">
-                    <span className="text-white text-3xl font-semibold ">
+                    <span className="text-white text-xl font-semibold sm:text-2xl">
                       Selecionar voto
                     </span>
                   </div>
                 )}
               </div>
-              <span className="text-sm text-amber-400 font-medium text-center sm:text-xl max-w-[300px]">
+              <span className="text-sm text-amber-400 font-medium text-center sm:text-lg max-w-[300px] uppercase">
                 {option.name}
               </span>
             </div>

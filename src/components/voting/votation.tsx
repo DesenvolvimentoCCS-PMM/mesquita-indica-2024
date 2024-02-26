@@ -22,27 +22,27 @@ export function Votation() {
       options: [
         {
           name: "Espaço de Reabilitação e Desenvolvimento da Criança",
-          image: "/options/obras/centro-reabilitacao-infantil.jpg",
+          image: "/options/categorias/pertencimento/cras-banco-de-areia.jpg",
         },
         {
           name: "Complexo do Potyguar",
-          image: "/options/obras/centro-reabilitacao-infantil.jpg",
+          image: "/options/categorias/pertencimento/cras-banco-de-areia.jpg",
         },
         {
           name: "Clínica da Jorge Campos",
-          image: "/options/obras/centro-reabilitacao-infantil.jpg",
+          image: "/options/categorias/pertencimento/cras-banco-de-areia.jpg",
         },
         {
           name: "Clínica da Família Jorge mpos",
-          image: "/options/obras/centro-reabilitacao-infantil.jpg",
+          image: "/options/categorias/pertencimento/cras-banco-de-areia.jpg",
         },
         {
           name: "Clínica da Família Jorge Campos",
-          image: "/options/obras/centro-reabilitacao-infantil.jpg",
+          image: "/options/categorias/pertencimento/cras-banco-de-areia.jpg",
         },
         {
           name: "Clínica da Família Jge Campos",
-          image: "/options/obras/centro-reabilitacao-infantil.jpg",
+          image: "/options/categorias/pertencimento/cras-banco-de-areia.jpg",
         },
       ],
     },
