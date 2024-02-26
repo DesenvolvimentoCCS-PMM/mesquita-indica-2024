@@ -86,6 +86,7 @@ export function Votation() {
           voteId,
           timestamp: new Date(),
         });
+        setRecaptchaIsChecked(false);
         setVotes({});
         setIsVotingComplete(false);
         toast.success("Votos enviados com sucesso, obrigado por participar!");
