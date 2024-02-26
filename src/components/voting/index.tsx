@@ -29,13 +29,13 @@ export function Voting() {
       <div className="h-96 w-96 rounded-full filter bg-amber-300 blur-[100px] bg-opacity-70 fixed -top-52 -right-44 z-50"></div>
 
       {/* Container */}
-      <div className="flex rounded-[65px] relative overflow-hidden bg-[#241A0C] max-w-7xl max-h-[1000px] m-auto sm:items-center sm:justify-center">
+      <div className="flex rounded-[65px] relative overflow-hidden bg-[#241A0C] max-w-7xl max-h-[890px] m-auto sm:items-center sm:justify-center">
         {/* Blur/Degrade */}
         <div className="h-full w-2/5 rounded-full filter bg-[#7D2D0A] blur-[120px] bg-opacity-80 absolute -left-52 -bottom-40"></div>
         <div className="h-full w-2/5 rounded-full filter bg-amber-300 blur-[100px] bg-opacity-60 absolute -top-80 -right-64"></div>
 
         {/* Box */}
-        <div className="w-full relative  h-[940px]">
+        <div className="w-full relative">
           {/* Texts */}
           <BannerText />
           <BannerCategorys />
