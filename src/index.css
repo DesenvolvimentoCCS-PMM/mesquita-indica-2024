@@ -48,18 +48,18 @@
 
 .slick-prev:before,
 .slick-next:before {
-  content: url('assets/voting/next.svg') !important; 
-  font-size: 0 !important; 
+  content: url("assets/voting/next.svg") !important;
+  font-size: 0 !important;
 }
 
-.slick-prev{
+.slick-prev {
   transform: rotate(180deg) !important;
 }
 
 .slick-prev {
-  left: -25px; 
+  left: -25px;
 }
 
 .slick-next {
-  right: -25px; 
+  right: -25px;
 }

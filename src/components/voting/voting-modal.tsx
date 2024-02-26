@@ -80,25 +80,6 @@ export function ClosingVotesModal({
                         </span>
                       </li>
                     ))}
-
-                    <li className="flex justify-between items-center border-b pb-2 border-darkBrown/30 ">
-                      <span>Nome da categoria</span>
-                      <span className="bg-green-600 w-6 h-6 text-center text-white rounded-md">
-                        ✓
-                      </span>
-                    </li>
-                    <li className="flex justify-between items-center border-b pb-2 border-darkBrown/30">
-                      <span>Nome da categoria</span>
-                      <span className="bg-green-600 w-6 h-6 text-center text-white rounded-md">
-                        ✓
-                      </span>
-                    </li>
-                    <li className="flex justify-between items-center border-b pb-2 border-darkBrown/30">
-                      <span>Nome da categoria</span>
-                      <span className="bg-red-600 w-6 h-6 text-center text-white rounded-md">
-                        ✕
-                      </span>
-                    </li>
                   </ul>
 
                   <div className="mt-5">

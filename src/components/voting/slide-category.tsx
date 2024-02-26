@@ -30,11 +30,23 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          className: "center",
+          centerMode: true,
+          centerPadding: "100px",
+        },
+      },
+      {
+        breakpoint: 1200,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -42,7 +54,16 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
           dots: true,
           className: "center",
           centerMode: true,
-          centerPadding: "60px",
+          centerPadding: "80px",
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
         },
       },
       {
@@ -50,9 +71,6 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          className: "center",
-          centerMode: true,
-          centerPadding: "60px",
         },
       },
     ],
@@ -80,21 +98,32 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
             onClick={() => handleSelectOption(option.name)}
           >
             <div className="flex flex-col items-center gap-y-4 w-full">
-              <div className="relative w-full">
+              <div className="relative w-full group flex">
                 <img
                   src={option.image}
                   alt={option.name}
-                  className="w-full  object-contain rounded-2xl sm:rounded-[45px] "
+                  className="h-[212px] object-cover w-full max-w-[300px] rounded-2xl sm:rounded-3xl m-auto lg:h-[312px]"
                 />
                 {selectedOption === option.name && (
-                  <div className="absolute inset-0 bg-green-500/75 flex justify-center items-center rounded-3xl sm:rounded-[45px]">
-                    <span className="text-white text-xl font-semibold sm:text-2xl">
-                      Selecionar voto
+                  <div className="absolute inset-0 bg-green-500/75 flex justify-center items-center rounded-2xl sm:rounded-3xl">
+                    <span className="text-white text-xl text-center font-semibold sm:text-2xl">
+                      Clique para confirmar
                     </span>
                   </div>
                 )}
+
+                <div
+                  className={`opacity-0 absolute inset-0 bg-green-500/75 justify-center items-center rounded-2xl sm:rounded-3xl flex transition-all duration-300 group-hover:opacity-100 ${
+                    selectedOption === option.name && "hidden"
+                  }`}
+                >
+                  <span className="text-white text-xl font-semibold sm:text-2xl">
+                    Votar
+                  </span>
+                </div>
               </div>
-              <span className="text-sm text-amber-400 font-medium text-center sm:text-lg max-w-[300px] uppercase">
+
+              <span className="text-lg text-amber-400 font-medium text-center lg:text-xl max-w-[300px] uppercase mb-4">
                 {option.name}
               </span>
             </div>
