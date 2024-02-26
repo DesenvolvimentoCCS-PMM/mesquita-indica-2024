@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.degrade {
+  background: radial-gradient(76% 50% at 50% 50%, #7d2d0a 0%, #581a06 98.15%);
+}
+
+.grad-home {
+  background: linear-gradient(180deg, rgba(247, 222, 204, 0) 0%, #f7decc 100%);
+}
+
+.transition-degrade {
+  background: linear-gradient(180deg, rgba(247, 222, 204, 0) 0%, #f7decc 100%);
+}
+
+.card-oscar {
+  box-shadow: 2px 14px 32px 0px rgba(40, 26, 6, 0.39),
+    9px 58px 58px 0px rgba(40, 26, 6, 0.34),
+    21px 130px 79px 0px rgba(40, 26, 6, 0.2),
+    37px 231px 93px 0px rgba(40, 26, 6, 0.06),
+    58px 360px 102px 0px rgba(40, 26, 6, 0.01);
+}
+
+.bg-card-small {
+  background: linear-gradient(129deg, #6a2a0e 2.77%, #534000 168.93%);
+}
+
+.grad-mesquita {
+  background: linear-gradient(
+    283deg,
+    #6f4f05 0.71%,
+    #7d2d0a 29.49%,
+    #f3bf3a 107.02%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slick-prev,
+.slick-next {
+  background: transparent !important;
+  color: transparent !important;
+  z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: url('assets/voting/next.svg') !important; 
+  font-size: 0 !important; 
+}
+
+.slick-prev{
+  transform: rotate(180deg) !important;
+}
+
+.slick-prev {
+  left: -25px; 
+}
+
+.slick-next {
+  right: -25px; 
+}
