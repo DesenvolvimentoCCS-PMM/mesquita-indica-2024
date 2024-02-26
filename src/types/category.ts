@@ -1,5 +1,6 @@
 export interface Category {
   categoryName: string;
+  description?: string;
   options: Option[];
 }
 

@@ -101,7 +101,9 @@ export function useRegisterValidation() {
     const userAlreadyExists = users.some((user) => user.email === email);
 
     if (userAlreadyExists) {
-      toast.error("Usuário já cadastrado!");
+      toast.error(
+        "Ops, você já possui um cadastro, clique em ''Quero votar novamente'' para continuar!"
+      );
     } else {
       const voteId = v4() + "mi2024";
 

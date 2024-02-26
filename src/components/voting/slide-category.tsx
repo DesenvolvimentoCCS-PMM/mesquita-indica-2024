@@ -59,7 +59,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
   };
 
   return (
-    <div>
+    <div className="mx-10">
       <div className="grid place-content-center text-center gap-y-4 mb-8">
         <h2 className="text-3xl text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl xl:text-6xl">
           {category.categoryName}
