@@ -12,7 +12,7 @@ export function Home() {
         <meta name="keywords" content="Mesquita Indica, Awards, Premiação, Baixada, Cidade, Cultura, Esporte" />
         <meta property="og:title" content="Mesquita Indica 2024" />
         <meta property="og:description" content="Participe da segunda edição do Mesquita Indica Awards e vote nos seus preferidos para levar a simbólica estatueta." />
-        <meta property="og:image" content="/home-images/bg-tablet.jpg" />
+        <meta property="og:image" content="https://indica.mesquita.rj.gov.br/home-images/bg-desktop.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https:/indica.mesquita.rj.gov.br" />
     </Helmet>
