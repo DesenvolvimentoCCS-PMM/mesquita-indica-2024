@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: "375px",
+        mdx: "928px",
       },
       colors: {
         gow: "#F5EBDC",
@@ -21,23 +21,27 @@ export default {
         cardOscar:
           "box-shadow: 1.092px 7.645px 16.383px 0px rgba(66, 30, 5, 0.54), 4.369px 29.489px 30.581px 0px rgba(66, 30, 5, 0.47), 10.922px 67.715px 40.411px 0px rgba(66, 30, 5, 0.28), 19.659px 120.14px 48.056px 0px rgba(66, 30, 5, 0.08), 30.581px 186.763px 53.517px 0px rgba(66, 30, 5, 0.01)",
       },
-    },
-    keyframes: {
-      borderAnimation: {
-        "0%": { transform: "rotate(0deg)" },
-        "100%": { transform: "rotate(360deg)" },
-      },
-      heightAnimation: {
-        "0%": { height: "500px" },
-        "100%": { height: "290px" },
-      },
-      heightReverseAnimation: {
-        "0%": { height: "290px" },
-        "100%": { height: "650px" },
-      },
-      opacityAnimation: {
-        "0%": { opacity: 0 },
-        "100%": { opacity: 1 },
+      keyframes: {
+        mouseDown: {
+          "0%": { transform: "translateY(0px)" },
+          "100%": { transform: "translateY(40px)" },
+        },
+        borderAnimation: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        heightAnimation: {
+          "0%": { height: "500px" },
+          "100%": { height: "290px" },
+        },
+        heightReverseAnimation: {
+          "0%": { height: "290px" },
+          "100%": { height: "650px" },
+        },
+        opacityAnimation: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
       },
     },
   },

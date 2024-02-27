@@ -1,3 +1,4 @@
+import { ChevronsDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Home() {
@@ -23,6 +24,15 @@ export function Home() {
         alt="bg mesquita indica - desktop"
         className="hidden  xl:block xl:h-full xl:w-full xl:object-cover xl:min-h-screen"
       />
+
+      <div className="absolute top-[55%] -left-3 lg:hidden">
+        <p className="rotate-90 text-white font-medium">Role para baixo</p>
+        <ChevronsDown
+          size={44}
+          strokeWidth={1.75}
+          className=" text-white rounded-md relative top-14 left-8 animate-bounce"
+        />
+      </div>
 
       <div className="w-full h-10 bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] relative -top-24 left-0 right-0 blur-sm sm:-top-6 lg:hidden" />
 
