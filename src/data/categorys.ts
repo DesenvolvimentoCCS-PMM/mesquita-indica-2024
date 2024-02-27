@@ -183,7 +183,7 @@ export const categories: Category[] = [
         image: "/options/categorias/inovacao/ec.jpeg",
       },
       {
-        name: "gameficação",
+        name: "gamificação",
         image: "/options/categorias/inovacao/gameficacao.jpeg",
       },
       {
