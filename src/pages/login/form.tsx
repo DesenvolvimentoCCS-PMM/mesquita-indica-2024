@@ -21,6 +21,7 @@ export function LoginForm() {
           type="text"
           id="email"
           className="bg-gow  border border-[#7d2d0a4d] rounded-md w-full  text-sm sm:text-base h-10 indent-2 text-darkBrown outline-none"
+          placeholder="E-mail utilizado no cadastro"
           required
           {...register("email")}
         />
