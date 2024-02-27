@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Category, Option } from "../../types/category";
 import Slider from "react-slick";
+import CustomSlider from "react-slick";
+
 
 interface CategorySlideProps {
   category: Category;
@@ -20,9 +22,20 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
   const handleSelectOption = (optionName: string) => {
     if (selectedOption === optionName) {
       onVote(category.categoryName, optionName);
+      resetSlider();
       nextCategory();
     } else {
       setSelectedOption(optionName);
+    }
+  };
+
+  
+
+  const sliderRef = useRef<CustomSlider>(null);
+
+  const resetSlider = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickGoTo(0);
     }
   };
 
@@ -103,7 +116,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
         </p>
       </div>
 
-      <Slider {...settingsSlide}>
+      <Slider ref={sliderRef} {...settingsSlide}>
         {category.options.map((option: Option) => (
           <div
             key={option.name}
