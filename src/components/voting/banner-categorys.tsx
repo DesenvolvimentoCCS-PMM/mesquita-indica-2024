@@ -74,22 +74,20 @@ export function BannerCategorys() {
             src={Oscar}
             alt="Boneco do Oscar"
             id="oscar-voting"
-            className="z-50 absolute w-44 -top-44 right-0 xs:right-4 sm:w-64 sm:drop-shadow-2xl sm:-top-10 sm:right-0 mdx:w-52  md:right-20 mdx:-top-20 mdx:right-0 lg:w-64 lg:-top-40"
+            className="z-50 absolute w-44 -top-44 right-0 xs:right-4 sm:w-64 drop-shadow-2xl sm:-top-10 sm:right-10 md:right-10 md:w-72 mdx:-top-20  mdx:w-52  mdx:right-0 lg:w-64 lg:-top-40"
           />
 
           <img
             src={star}
-            alt="Boneco do Oscar"
-            id="oscar-voting"
-            className="w-20 absolute -top-14 left-14 sm:left-16 sm:w-28"
+            alt="Estrelas douradas"
+            className="w-20 absolute -top-14 left-14 sm:left-16 sm:w-28 lg:left-12"
           />
         </div>
 
         <img
           src={star2}
-          alt="Boneco do Oscar"
-          id="oscar-voting"
-          className="hidden absolute sm:block sm:right-36 sm:bottom-10 sm:w-28 z-50 md:right-56 md:bottom-14"
+          alt="Estrela marrom"
+          className="hidden absolute sm:right-36 sm:bottom-10 sm:w-28 z-50 lg:block lg:right-56 lg:bottom-14"
         />
       </div>
     </div>

@@ -47,7 +47,7 @@ export function Home() {
             <div className="text-blur" />
           </div>
 
-          <p className="text-base text-center max-w-[600px] font-sans text-darkBrown sm:text-xl lg:text-left lg:w-[500px]">
+          <p className="text-base text-center max-w-[600px] font-sans text-darkBrown sm:text-xl lg:text-left lg:max-w-[480px] xl:">
             Está de volta a premiação mais popular da cidade:
             <span className="text-[#6F4F05] font-semibold">
               o Mesquita Indica Awards. A segunda edição do projeto conta com
@@ -56,14 +56,19 @@ export function Home() {
             , mas segue com o objetivo de despertar o sentimento de
             pertencimento em cada morador da Caçulinha da Baixada.
           </p>
-          <p className="text-base text-center max-w-[600px] pb-3 text-darkBrown font-sans sm:text-xl lg:text-left lg:w-[500px]">
+          <p className="text-base text-center max-w-[600px] pb-3 text-darkBrown font-sans sm:text-xl lg:text-left lg:max-w-[480px]">
             <span className="text-[#6F4F05] font-semibold">
               Sabe o CRAS que você é atendido?
             </span>{" "}
             E aquele equipamento cultural ou esportivo que tem um espacinho
-            especial no seu coração? Ah, e o bairro onde você mora? Então, essa
-            é a hora de votar nos seus preferidos para levar a simbólica
-            estatueta. Contamos com o seu voto!
+            especial no seu coração? Ah, e o bairro onde você mora?{" "}
+            <span className="text-[#6F4F05] font-semibold">
+              Então, essa é a hora de votar
+            </span>{" "}
+            nos seus preferidos para levar a simbólica estatueta.{" "}
+            <span className="text-[#6F4F05] font-semibold">
+              Contamos com o seu voto!
+            </span>
           </p>
 
           <Link

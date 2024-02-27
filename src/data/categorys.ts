@@ -105,7 +105,8 @@ export const categories: Category[] = [
       },
       {
         name: "circo rocha sobrinho",
-        image: "/options/generic.jpeg",
+        image:
+          "/options/categorias/mesquita-do-futuro/circo-rocha-sobrinho.jpeg",
       },
       {
         name: "capsi",
@@ -113,7 +114,7 @@ export const categories: Category[] = [
       },
       {
         name: "centro de lutas",
-        image: "/options/generic.jpeg",
+        image: "/options/categorias/mesquita-do-futuro/centro-de-lutas.jpeg",
       },
     ],
   },
