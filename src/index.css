@@ -63,3 +63,11 @@
 .slick-next {
   right: -25px;
 }
+
+.slick-dots li.slick-active button:before {
+  color: #f3bf3a !important;
+}
+
+.slick-dots li button:before {
+  color: #f7decc !important;
+}
