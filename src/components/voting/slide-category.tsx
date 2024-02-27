@@ -28,10 +28,11 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
 
   const settingsSlide = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1440,
@@ -79,7 +80,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
   return (
     <div className="mx-6 sm:mx-10">
       <div className="grid place-content-center text-center mb-8">
-        <span className="text-lg relative -bottom-2 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-100 to-amber-300 sm:text-xl sm:mb-0 md:text-3xl">
+        <span className="text-lg relative -bottom-1 font-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-100 to-amber-300 sm:text-xl sm:mb-0 md:text-3xl">
           Categoria
         </span>
         <h2 className="text-3xl uppercase py-2 text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl">
