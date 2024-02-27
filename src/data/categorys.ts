@@ -103,6 +103,18 @@ export const categories: Category[] = [
         image:
           "/options/categorias/mesquita-do-futuro/policlinica-cosmorama.jpg",
       },
+      {
+        name: "circo rocha sobrinho",
+        image: "/options/generic.jpeg",
+      },
+      {
+        name: "capsi",
+        image: "/options/generic.jpeg",
+      },
+      {
+        name: "centro de lutas",
+        image: "/options/generic.jpeg",
+      },
     ],
   },
   {
