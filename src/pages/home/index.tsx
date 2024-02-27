@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 export function Home() {
   return (
+    
     <div className="bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] relative min-h-screen lg:grid lg:grid-cols-2 xl:grid-cols-1">
       {/* mobile */}
       <img
