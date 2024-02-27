@@ -45,8 +45,17 @@ export function Votation() {
 
   //Volta uma categoria
   const returnToPreviousCategory = () => {
-    const newIndex =
-      (currentCategoryIndex - 1 + categories.length) % categories.length;
+    const newIndex = (currentCategoryIndex - 1 + categories.length) % categories.length;
+    const previousCategoryName = categories[newIndex].categoryName;
+
+    if (votes[previousCategoryName]) {
+      setVotes((prevVotes) => {
+        const updatedVotes = { ...prevVotes };
+        delete updatedVotes[previousCategoryName];
+        return updatedVotes;
+      });
+    }
+  
     setCurrentCategoryIndex(newIndex);
   };
 
