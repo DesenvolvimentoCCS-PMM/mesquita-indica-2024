@@ -110,7 +110,7 @@ export const categories: Category[] = [
       },
       {
         name: "capsi",
-        image: "/options/generic.jpeg",
+        image: "/options/categorias/mesquita-do-futuro/capsi.jpeg",
       },
       {
         name: "centro de lutas",
