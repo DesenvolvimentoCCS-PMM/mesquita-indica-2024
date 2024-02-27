@@ -7,9 +7,24 @@ export function Home() {
     
     <div className="bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] relative min-h-screen lg:grid lg:grid-cols-2 xl:grid-cols-1">
        <Helmet>
-      <title>Mesquita Indica 2024</title>
+        <meta charSet="utf-8" />
+        <title>Mesquita Indica 2024</title>
+        <link rel="canonical" href="https:/indica.mesquita.rj.gov.br" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#F7DECC" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Prefeitura de Mesquita" />
+        
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Mesquita Indica 2024" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/jpeg" />
+        
+
         <meta name="description" content="Está de volta a premiação mais popular da cidade: o Mesquita Indica Awards. A segunda edição do projeto conta com novas categorias, mas segue com o objetivo de despertar o sentimento de pertencimento em cada morador da Caçulinha da Baixada." />
         <meta name="keywords" content="Mesquita Indica, Awards, Premiação, Baixada, Cidade, Cultura, Esporte" />
+
         <meta property="og:title" content="Mesquita Indica 2024" />
         <meta property="og:description" content="Participe da segunda edição do Mesquita Indica Awards e vote nos seus preferidos para levar a simbólica estatueta." />
         <meta property="og:image" content="https://indica.mesquita.rj.gov.br/home-images/bg-desktop.jpg" />
