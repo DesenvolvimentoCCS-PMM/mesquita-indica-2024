@@ -82,11 +82,11 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
         <span className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-100 to-amber-300 sm:text-3xl">
           Categoria
         </span>
-        <h2 className="text-3xl uppercase pb-2 text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl">
+        <h2 className="text-3xl uppercase py-2 text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl">
           {category.categoryName}
         </h2>
         {category.description && (
-          <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 text-base font-medium relative -top-3 sm:text-xl">
+          <h3 className="bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 text-base font-medium relative top-0 sm:text-xl">
             {"("}
             {category.description}
             {")"}

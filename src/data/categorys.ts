@@ -107,7 +107,7 @@ export const categories: Category[] = [
   },
   {
     categoryName: "Atenção Básica",
-    description: "Clínica da familía favorita",
+    description: "Clínica da família favorita",
     options: [
       {
         name: "Clínica da Família Edson Passos",

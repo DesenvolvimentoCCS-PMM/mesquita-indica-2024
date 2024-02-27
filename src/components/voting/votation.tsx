@@ -45,7 +45,8 @@ export function Votation() {
 
   //Volta uma categoria
   const returnToPreviousCategory = () => {
-    const newIndex = (currentCategoryIndex - 1 + categories.length) % categories.length;
+    const newIndex =
+      (currentCategoryIndex - 1 + categories.length) % categories.length;
     const previousCategoryName = categories[newIndex].categoryName;
 
     if (votes[previousCategoryName]) {
@@ -55,7 +56,7 @@ export function Votation() {
         return updatedVotes;
       });
     }
-  
+
     setCurrentCategoryIndex(newIndex);
   };
 
@@ -123,7 +124,7 @@ export function Votation() {
         />
       )}
 
-      <div className="w-full flex items-center gap-x-4 justify-between mt-7">
+      <div className="w-full flex items-center gap-x-4 justify-between mt-12 sm:mt-6">
         {currentCategoryIndex > 0 && (
           <button
             onClick={returnToPreviousCategory}
@@ -136,7 +137,7 @@ export function Votation() {
         {Object.keys(votes).length >= 3 && remainingVotes > 0 && (
           <button
             onClick={skipToNextCategory}
-            className="bg-amber-300 hover:bg-amber-500 transition-all text-brown font-medium w-24 h-10 rounded-md"
+            className="bg-amber-300 hover:bg-amber-500 transition-all text-brown font-medium w-24 h-10 rounded-md "
           >
             Pular
           </button>
