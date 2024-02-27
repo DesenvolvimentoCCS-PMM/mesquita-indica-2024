@@ -115,9 +115,9 @@ export function useRegisterValidation() {
         voteId,
       });
 
-      // if (user) {
-      //   navigate("/votar");
-      // }
+      if (user) {
+        navigate("/votar");
+      }
     }
   };
 
