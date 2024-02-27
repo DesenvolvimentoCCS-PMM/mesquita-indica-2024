@@ -22,7 +22,7 @@ export function Voting() {
   };
 
   return (
-    <div className="min-h-screen bg-darkBrown p-4 sm:p-10">
+    <div className="min-h-screen bg-darkBrown p-4 scroll-smooth overf sm:p-10">
       <Toaster position="top-right" reverseOrder={false} />
 
       {/* Blur */}

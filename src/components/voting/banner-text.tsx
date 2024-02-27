@@ -10,7 +10,7 @@ export function BannerText() {
         Conheça as categorias
       </h1>
       <a
-        href="#voting"
+        href="#opcoes"
         className=" flex items-center justify-center gap-x-4 bg-brown rounded-3xl w-24 h-8 p-1  text-amber-300 sm:text-base"
       >
         Votar
