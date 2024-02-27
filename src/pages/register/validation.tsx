@@ -54,7 +54,6 @@ export function useRegisterValidation() {
     handleSubmit,
   } = useForm<formSchemaType>({
     resolver: zodResolver(formSchema),
-    mode: "onBlur",
   });
 
   const navigate = useNavigate();
