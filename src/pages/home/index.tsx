@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export function Home() {
   return (
-    <div className="bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] min-h-screen lg:grid lg:grid-cols-2 xl:grid-cols-1">
+    <div className="bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] relative min-h-screen lg:grid lg:grid-cols-2 xl:grid-cols-1">
       {/* mobile */}
       <img
         src="/home-images/bg-mobile.jpg"
@@ -25,12 +25,12 @@ export function Home() {
         className="hidden  xl:block xl:h-full xl:w-full xl:object-cover xl:min-h-screen"
       />
 
-      <div className="absolute top-[55%] -left-3 lg:hidden">
+      <div className="absolute top-[480px] -left-8 lg:hidden">
         <p className="rotate-90 text-white font-medium">Role para baixo</p>
         <ChevronsDown
           size={44}
           strokeWidth={1.75}
-          className=" text-white rounded-md relative top-14 left-8 animate-bounce"
+          className=" text-brown rounded-md relative top-14 left-8 animate-bounce z-50"
         />
       </div>
 
