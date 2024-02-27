@@ -4,13 +4,26 @@ import { BannerText } from "../../components/voting/banner-text";
 import { Votation } from "../../components/voting/votation";
 import { useNavigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
+import { getAnalytics, logEvent } from "firebase/analytics";
 
 export function Voting() {
   const navigateTo = useNavigate();
+  const analytics = getAnalytics();
 
   useEffect(() => {
     checkVotingPermission();
-  }, []);
+
+    const entradaNaPagina = Date.now();
+    // Retorna uma função de limpeza que será chamada quando o componente for desmontado
+    return () => {
+      // Calcula quanto tempo (em segundos) o usuário passou na página
+      const tempoGasto = (Date.now() - entradaNaPagina) / 1000;
+
+        logEvent(analytics, 'tempo_na_pagina_votar', {
+        tempo_em_segundos: tempoGasto
+      });
+    };
+  }, [navigateTo, analytics]);
 
   const checkVotingPermission = () => {
     const voteId = localStorage.getItem("voteId");
