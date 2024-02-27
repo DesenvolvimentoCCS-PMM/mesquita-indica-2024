@@ -11,7 +11,6 @@ export function BigCard({ title }: BigCardProps) {
         <img src={OscarCircle} alt="Circulo Oscar" className="w-14 h-w-14" />
 
         <h1 className="text-sm text-gold font-semibold text-center">{title}</h1>
-
       </div>
     </div>
   );
