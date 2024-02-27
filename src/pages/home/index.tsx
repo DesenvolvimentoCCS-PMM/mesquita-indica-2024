@@ -1,9 +1,21 @@
+import { Helmet } from 'react-helmet';
 import { ChevronsDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Home() {
   return (
+    
     <div className="bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] relative min-h-screen lg:grid lg:grid-cols-2 xl:grid-cols-1">
+       <Helmet>
+      <title>Mesquita Indica 2024</title>
+        <meta name="description" content="Está de volta a premiação mais popular da cidade: o Mesquita Indica Awards. A segunda edição do projeto conta com novas categorias, mas segue com o objetivo de despertar o sentimento de pertencimento em cada morador da Caçulinha da Baixada." />
+        <meta name="keywords" content="Mesquita Indica, Awards, Premiação, Baixada, Cidade, Cultura, Esporte" />
+        <meta property="og:title" content="Mesquita Indica 2024" />
+        <meta property="og:description" content="Participe da segunda edição do Mesquita Indica Awards e vote nos seus preferidos para levar a simbólica estatueta." />
+        <meta property="og:image" content="/home-images/bg-tablet.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https:/indica.mesquita.rj.gov.br" />
+    </Helmet>
       {/* mobile */}
       <img
         src="/home-images/bg-mobile.jpg"
