@@ -79,9 +79,8 @@ export function Votation() {
         });
         setVotes({});
         setIsVotingComplete(false);
-        toast.success("Votos enviados com sucesso, obrigado por participar!");
-
-        setTimeout(() => navigate("/"), 2300);
+        toast.success("Votos enviados com sucesso!");
+        setTimeout(() => navigate("/agradecimentos"), 1000);
       } else if (!voteId) {
         toast.error(
           "Você não possue permissão para votar, faça login ou cadastro!"

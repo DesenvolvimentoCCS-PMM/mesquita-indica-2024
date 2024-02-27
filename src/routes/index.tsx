@@ -3,6 +3,7 @@ import { Home } from "../pages/home";
 import { Register } from "../pages/register";
 import { Voting } from "../pages/voting";
 import { Login } from "../pages/login";
+import { Congratulations } from "../pages/congratulations";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/votar",
     element: <Voting />,
+  },
+  {
+    path: "/agradecimentos",
+    element: <Congratulations />,
   },
 ]);
 
