@@ -2,11 +2,11 @@ import Arrow from "../../assets/voting/arrow.svg";
 
 export function BannerText() {
   return (
-    <div className="text-white flex flex-col items-center  gap-y-2 md:pl-20">
+    <div className="text-white flex flex-col items-center  gap-y-2 md:pl-20 ">
       <h2 className="text-xl font-normal bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-amber-400 sm:text-lg md:text-2xl">
         Antes de votar
       </h2>
-      <h1 className="text-2xl text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl">
+      <h1 className="text-2xl text-center pb-4 transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl">
         Conheça as categorias
       </h1>
       <a
