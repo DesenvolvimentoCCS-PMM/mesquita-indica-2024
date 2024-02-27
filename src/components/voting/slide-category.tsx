@@ -77,9 +77,12 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
   };
 
   return (
-    <div className="mx-6  sm:mx-10">
-      <div className="grid place-content-center text-center gap-y-4 mb-8">
-        <h2 className="text-3xl pb-2 text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl xl:text-6xl">
+    <div className="mx-6 sm:mx-10" id="voting">
+      <div className="grid place-content-center text-center  mb-8">
+        <span className="text-lg font-semibold bg-clip-text text-transparent bg-gradient-to-r from-amber-100 to-amber-300">
+          Categoria
+        </span>
+        <h2 className="text-3xl uppercase pb-2 text-center transition-all font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-amber-400 md:text-5xl xl:text-6xl">
           {category.categoryName}
         </h2>
         {category.description && (
@@ -89,7 +92,7 @@ const CategorySlide: React.FC<CategorySlideProps> = ({
             {")"}
           </h3>
         )}
-        <p className="text-xl font-medium bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-amber-400 sm:text-lg md:text-2xl">
+        <p className="text-sm font-semibold bg-clip-text mt-8 mb-4 text-transparent bg-gradient-to-r from-amber-600 to-amber-400 sm:text-lg md:text-2xl">
           Escolha sua opção favorita e vote abaixo
         </p>
         <p className="h-8 px-4 flex items-center w-max text-sm m-auto bg-gradient-to-l  to-brown from-amber-500 rounded-md text-white transition-all duration-300 hover:shadow-2xl sm:h-10 sm:px-5 sm:text-base">

@@ -9,10 +9,10 @@ import { v4 } from "uuid";
 //Validações do formulário
 const formSchema = z.object({
   fullname: z.string().refine(
-    (value) => {
+    (data) => {
       //Divide a string em duas partes baseado nos espaços entre elas e obriga que ambas partes tem algo escrito (nome e sobrenome).
-      const parts = value.split(" ");
-      return parts.length === 2 && parts.every((part) => part.trim() !== "");
+      const partes = data.trim().split(" ");
+      return partes.length >= 2 && partes.every((parte) => parte.length > 0);
     },
     {
       message: "Digite o nome e o sobrenome.",
@@ -115,9 +115,9 @@ export function useRegisterValidation() {
         voteId,
       });
 
-      if (user) {
-        navigate("/votar");
-      }
+      // if (user) {
+      //   navigate("/votar");
+      // }
     }
   };
 

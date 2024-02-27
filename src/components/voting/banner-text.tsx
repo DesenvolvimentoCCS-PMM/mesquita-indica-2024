@@ -10,10 +10,10 @@ export function BannerText() {
         Conheça as categorias
       </h1>
       <a
-        href="#votacao"
-        className="text- flex items-center justify-center gap-x-4 bg-brown rounded-3xl w-24 h-8 p-1  text-amber-300 sm:text-base"
+        href="#voting"
+        className=" flex items-center justify-center gap-x-4 bg-brown rounded-3xl w-24 h-8 p-1  text-amber-300 sm:text-base"
       >
-        Veja
+        Votar
         <img src={Arrow} className="w-4" />
       </a>
     </div>
