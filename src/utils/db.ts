@@ -1,6 +1,8 @@
 import { addDoc, collection, getDocs, query, where } from "firebase/firestore";
 import { User } from "../types/user";
 import { firestore } from "../services/firebase";
+import toast from "react-hot-toast";
+import { FirebaseError } from "firebase/app";
 
 export const createNewUser = async (user: User) => {
   try {
@@ -50,6 +52,10 @@ export const getAllUsers = async () => {
 
     return users;
   } catch (error) {
-    console.log(error);
+    const err = error as FirebaseError;
+    console.log(err);
+    toast.error(
+      "No momento estamos tendo muitos acessos, tente novamente mais tarde!"
+    );
   }
 };
