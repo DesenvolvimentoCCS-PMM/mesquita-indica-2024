@@ -135,7 +135,6 @@ export function Votation() {
       {isVotingComplete && (
         <ClosingVotesModal
           categories={categories}
-          isOpen={isVotingComplete}
           votes={votes}
           resetVotes={resetVotes}
           submitVotes={submitVotes}
