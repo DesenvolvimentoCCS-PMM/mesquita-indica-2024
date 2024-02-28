@@ -12,6 +12,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.18",
     "@hookform/resolvers": "^3.3.4",
+    "dotenv": "^16.4.5",
     "firebase": "^10.8.0",
     "lucide-react": "^0.341.0",
     "phosphor-icons": "^1.4.2",
