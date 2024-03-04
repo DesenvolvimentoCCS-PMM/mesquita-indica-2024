@@ -274,7 +274,7 @@ export const categories: Category[] = [
         image: "/options/categorias/transformacao-social/circo-chatuba.jpg",
       },
       {
-        name: "cras santa terezinha",
+        name: "cras (todos)",
         image:
           "/options/categorias/transformacao-social/cras-santa-terezinha.jpg",
       },
