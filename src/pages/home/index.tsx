@@ -2,6 +2,45 @@ import { ChevronsDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export function Home() {
+
+  const categorias = {
+    'Acolhimento': [
+      { nome: 'cras santa terezinha', votos: 168 },
+      { nome: 'cras juscelino', votos: 149 },
+      { nome: 'cras banco de areia', votos: 127 },
+    ],
+    'Atenção Básica': [
+      { nome: 'clínica da família bnh', votos: 810 },
+      { nome: 'Clínica da Família Edson Passos', votos: 147 },
+      { nome: 'clínica da família cosmorama', votos: 134 },
+    ],
+    'Inovação': [
+      { nome: 'centro de controle operacional (cco)', votos: 537 },
+      { nome: 'gamificação', votos: 204 },
+      { nome: 'totem', votos: 150 },
+    ],
+    'Mesquita do futuro': [
+      { nome: 'policlinica sao josé', votos: 910 },
+      { nome: 'ciclovia bnh', votos: 136 },
+      { nome: 'capsi', votos: 97 }
+    ],
+    'Pertencimento': [
+      { nome: 'bnh', votos: 667 },
+      { nome: 'centro', votos: 170 },
+      { nome: 'cosmorama', votos: 118 }
+    ],
+    'Qualidade de Vida': [
+      { nome: 'ciclovia baronesa', votos: 278 },
+      { nome: 'vila olimpica', votos: 260 },
+      { nome: 'campo da bica', votos: 125 }
+    ],
+    'Transformação Social': [
+      { nome: 'circo chatuba', votos: 394 },
+      { nome: 'cursos profissionalizantes livres', votos: 185 },
+      { nome: 'praça pec', votos: 121 }
+    ],
+  };
+
   return (
     
     <div className="bg-gradient-to-b from-[#F7DECC] to-[#f3e1d1] relative min-h-screen lg:grid lg:grid-cols-2 xl:grid-cols-1">
@@ -49,35 +88,29 @@ export function Home() {
           </div>
 
           <p className="text-base text-center max-w-[600px] font-sans text-darkBrown sm:text-xl lg:text-left lg:max-w-[480px] xl:">
-            Está de volta a premiação mais popular da cidade:
+              Veja os resultados da votação e conheça os vencedores do Mesquita Indica 2024
             <span className="text-[#6F4F05] font-semibold">
-              o Mesquita Indica Awards. A segunda edição do projeto conta com
-              novas categorias
-            </span>
-            , mas segue com o objetivo de despertar o sentimento de
-            pertencimento em cada morador da Caçulinha da Baixada.
-          </p>
-          <p className="text-base text-center max-w-[600px] pb-3 text-darkBrown font-sans sm:text-xl lg:text-left lg:max-w-[480px]">
-            <span className="text-[#6F4F05] font-semibold">
-              Sabe o CRAS que você é atendido?
-            </span>{" "}
-            E aquele equipamento cultural ou esportivo que tem um espacinho
-            especial no seu coração? Ah, e o bairro onde você mora?{" "}
-            <span className="text-[#6F4F05] font-semibold">
-              Então, essa é a hora de votar
-            </span>{" "}
-            nos seus preferidos para levar a simbólica estatueta.{" "}
-            <span className="text-[#6F4F05] font-semibold">
-              Contamos com o seu voto!
-            </span>
-          </p>
 
-          <Link
-            to={"/cadastrar"}
-            className="h-12 px-8 flex items-center w-max text-sm m-auto bg-gradient-to-l  to-amber-500 from-brown rounded-2xl font-serif text-amber-200 shadow-sm transition-all duration-300 hover:shadow-2xl hover:shadow-amber-600 hover:scale-105 sm:h-14 sm:text-base lg:m-0"
-          >
-            PREENCHA O FORMULÁRIO
-          </Link>
+            </span>
+          </p>
+          <div className="container mx-auto px-4">
+            <div className="flex flex-wrap -mx-2 gap-1">
+              {Object.entries(categorias).map(([categoria, opcoes]) => (
+                <div key={categoria} className="px-2 w-full sm:w-1/2 lg:w-1/4 mb-2 mr-2 text-darkBrown bg-stone-50 rounded-md p-2">
+                  <h2 className="text-2xl font-bold mb-4">{categoria}</h2>
+                  <ul className="list-decimal ml-4">
+                    {opcoes.map(opcao => (
+                      <li key={opcao.nome} className="mb-2">
+                        {opcao.nome}: {opcao.votos} votos
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
