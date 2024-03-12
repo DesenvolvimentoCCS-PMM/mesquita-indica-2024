@@ -4,7 +4,7 @@ import { Podio } from "../../components/podio";
 import { useEffect } from "react";
 import { init } from "aos";
 import "aos/dist/aos.css";
-import { ChevronsDown } from "lucide-react";
+// import { ChevronsDown } from "lucide-react";
 
 export function Result() {
   useEffect(() => {
