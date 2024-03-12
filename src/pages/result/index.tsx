@@ -34,7 +34,7 @@ export function Result() {
                 />
               </div>
               <div className="flex flex-col items-center relative top-10 md:gap-y-4 md:top-20">
-                <h1 className="text-2xl text-center text-[#DFD6A6] font-semibold md:text-5xl">
+                <h1 className="text-3xl text-center text-[#DFD6A6] font-semibold md:text-5xl">
                   {category.title}
                 </h1>
                 <h2 className="text-xl text-[#DFD6A6] font-medium md:text-3xl">
