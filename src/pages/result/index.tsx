@@ -23,8 +23,8 @@ export function Result() {
               data-aos-offset="500"
               key={index}
             >
-              <div className="absolute -left-7 top-72 flex flex-col items-center md:top-[480px]">
-                <p className="mb-2 rotate-90 text-xs text-white sm:text-sm">
+              {/* <div className="absolute -left-7 top-72 flex flex-col items-center md:top-[480px]">
+                <p className="mb-2 rotate-90 text-xs text-white/20 sm:text-sm">
                   Role para baixo
                 </p>
                 <ChevronsDown
@@ -32,7 +32,7 @@ export function Result() {
                   strokeWidth={1.75}
                   className=" text-white rounded-md relative top-10 animate-bounce z-50"
                 />
-              </div>
+              </div> */}
               <div className="flex flex-col items-center relative top-10 md:gap-y-4 md:top-20">
                 <h1 className="text-3xl text-center text-[#DFD6A6] font-semibold md:text-5xl">
                   {category.title}
