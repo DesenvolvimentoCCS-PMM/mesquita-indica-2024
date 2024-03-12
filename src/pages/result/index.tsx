@@ -23,7 +23,7 @@ export function Result() {
               data-aos-offset="500"
               key={index}
             >
-              <div className="absolute -left-10 top-80 flex flex-col items-center md:top-[480px]">
+              <div className="absolute -left-7 top-72 flex flex-col items-center md:top-[480px]">
                 <p className="mb-2 rotate-90 text-xs text-white sm:text-sm">
                   Role para baixo
                 </p>
