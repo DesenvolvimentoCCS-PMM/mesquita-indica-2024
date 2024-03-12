@@ -1,5 +1,4 @@
 import { ChevronsDown } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export function Home() {
 
