@@ -25,7 +25,9 @@ export function Podio({ position, value, votes }: PodioProps) {
               {value}
             </p>
 
-            <span className="text-white text-sm">{votes} votos</span>
+            <span className="text-white text-sm sm:text-base">
+              {votes} votos
+            </span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-4 bg-[#e2aa44] md:w-28 md:h-7" />
@@ -48,7 +50,9 @@ export function Podio({ position, value, votes }: PodioProps) {
             <span className="text-sm max-w-[100px] text-center leading-5 text-[#c0c0c0] font-semibold uppercase md:text-xl md:max-w-[140px]">
               {value}
             </span>
-            <span className="text-white text-sm">{votes} votos</span>
+            <span className="text-white text-sm sm:text-base">
+              {votes} votos
+            </span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-4 bg-[#c0c0c0] md:w-28 md:h-7" />
@@ -71,7 +75,9 @@ export function Podio({ position, value, votes }: PodioProps) {
             <span className="text-sm max-w-[100px] text-center leading-5 text-[#CD7F32] font-semibold uppercase md:text-xl md:max-w-[140px]">
               {value}
             </span>
-            <span className="text-white text-sm">{votes} votos</span>
+            <span className="text-white text-sm sm:text-base">
+              {votes} votos
+            </span>
           </div>
           <div className="flex flex-col items-center">
             <div className="w-14 h-4 bg-[#CD7F32] md:w-28 md:h-7" />

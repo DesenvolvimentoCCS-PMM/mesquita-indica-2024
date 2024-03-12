@@ -4,6 +4,7 @@ import { Podio } from "../../components/podio";
 import { useEffect, useState } from "react";
 import { init } from "aos";
 import "aos/dist/aos.css";
+import { ChevronsDown } from "lucide-react";
 
 export function Result() {
   const [currentPosition, setCurrentPosition] = useState(0);
@@ -23,6 +24,16 @@ export function Result() {
               data-aos-duration="800"
               data-aos-offset="500"
             >
+              <div className="absolute -left-10 top-80 flex flex-col items-center">
+                <p className="mb-2 rotate-90 text-xs text-white">
+                  Role para baixo
+                </p>
+                <ChevronsDown
+                  size={28}
+                  strokeWidth={1.75}
+                  className=" text-white rounded-md relative top-10 animate-bounce z-50"
+                />
+              </div>
               <div className="flex flex-col items-center relative top-10 md:gap-y-4 md:top-20">
                 <h1 className="text-2xl text-center text-[#DFD6A6] font-semibold md:text-5xl">
                   {category.title}

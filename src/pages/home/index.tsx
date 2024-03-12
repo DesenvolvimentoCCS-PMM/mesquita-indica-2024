@@ -52,25 +52,6 @@ export function Home() {
             Indica 2024
             <span className="text-[#6F4F05] font-semibold"></span>
           </p>
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap -mx-2 gap-1">
-              {Object.entries(results).map(([categoria, opcoes]) => (
-                <div
-                  key={categoria}
-                  className="px-2 w-full sm:w-1/2 lg:w-1/4 mb-2 mr-2 text-darkBrown bg-stone-50 rounded-md p-2"
-                >
-                  <h2 className="text-2xl font-bold mb-4">{categoria}</h2>
-                  <ul className="list-decimal ml-4">
-                    {opcoes.map((opcao) => (
-                      <li key={opcao.nome} className="mb-2">
-                        {opcao.nome}: {opcao.votos} votos
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </div>
