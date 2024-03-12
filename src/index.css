@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  scroll-behavior: smooth;
+}
 .degrade {
   background: radial-gradient(76% 50% at 50% 50%, #7d2d0a 0%, #581a06 98.15%);
 }
