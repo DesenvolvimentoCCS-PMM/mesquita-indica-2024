@@ -1,5 +1,4 @@
 import { ChevronsDown } from "lucide-react";
-import { results } from "../../data/results";
 
 export function Home() {
   return (

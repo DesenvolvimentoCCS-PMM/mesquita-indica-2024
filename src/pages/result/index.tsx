@@ -1,14 +1,12 @@
 import { results } from "../../data/results";
 import Hexagono from "../../assets/poligono.svg";
 import { Podio } from "../../components/podio";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { init } from "aos";
 import "aos/dist/aos.css";
 import { ChevronsDown } from "lucide-react";
 
 export function Result() {
-  const [currentPosition, setCurrentPosition] = useState(0);
-
   useEffect(() => {
     init();
   }, []);
@@ -23,9 +21,10 @@ export function Result() {
               data-aos="fade-up"
               data-aos-duration="800"
               data-aos-offset="500"
+              key={index}
             >
-              <div className="absolute -left-10 top-80 flex flex-col items-center">
-                <p className="mb-2 rotate-90 text-xs text-white">
+              <div className="absolute -left-10 top-80 flex flex-col items-center md:top-[480px]">
+                <p className="mb-2 rotate-90 text-xs text-white sm:text-sm">
                   Role para baixo
                 </p>
                 <ChevronsDown
