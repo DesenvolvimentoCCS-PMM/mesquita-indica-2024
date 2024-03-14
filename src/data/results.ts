@@ -68,7 +68,8 @@ export const results = [
       { name: "cruzeiro do sul", votes: 17, pos: 13 },
       { name: "rocha sobrinho", votes: 15, pos: 14 },
       { name: "bairro industrial", votes: 12, pos: 15 },
-      { name: "vila norma", votes: 4, pos: 16 },
+      { name: "juscelino", votes: 10, pos: 16 },
+      { name: "vila norma", votes: 4, pos: 17 },
     ],
   },
   {
